@@ -1,0 +1,47 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Main container */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Style for the header */
+header h1 {
+    font-size: 36px;
+    margin: 20px 0;
+    color: #333;
+}
+
+/* Video section */
+.video-section {
+    margin: 20px 0;
+}
+
+.project-video {
+    width: 100%; /* Mengisi lebar kontainer */
+    height: 90vh; /* Menggunakan viewport height untuk membuat video lebih besar */
+    object-fit: cover; /* Menjaga video tetap proporsional */
+}
+
+/* Overview and Role sections */
+section {
+    margin: 20px 0;
+}
+
+h2 {
+    font-size: 28px;
+    color: #2c3e50;
+}
+
+p {
+    font-size: 18px;
+    color: #7f8c8d;
+    line-height: 1.6;
+}

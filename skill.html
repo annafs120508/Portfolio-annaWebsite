@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Skills</title>
+    <link rel="stylesheet" href="skill.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2 class="header">My Skills</h2>
+
+        <!-- Filter buttons -->
+        <div class="filters">
+            <button class="filter-button active" data-filter="all">All</button>
+            <button class="filter-button" data-filter="frontend">Frontend</button>
+            <button class="filter-button" data-filter="backend">Backend</button>
+            <button class="filter-button" data-filter="design">Design</button>
+        </div>
+
+        <!-- Skills -->
+        <div class="skills">
+            <div class="skill-content active" data-category="frontend">
+                <div class="skill-card">
+                    <div class="skill-info">
+                        <h3>HTML</h3>
+                        <p class="category">Frontend</p>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-info">
+                        <h3>CSS</h3>
+                        <p class="category">Frontend</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skill-content" data-category="backend">
+                <div class="skill-card">
+                    <div class="skill-info">
+                        <h3>Node.js</h3>
+                        <p class="category">Backend</p>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-info">
+                        <h3>PHP</h3>
+                        <p class="category">Backend</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skill-content" data-category="design">
+                <div class="skill-card">
+                    <div class="skill-info">
+                        <h3>Photoshop</h3>
+                        <p class="category">Design</p>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-info">
+                        <h3>Figma</h3>
+                        <p class="category">Design</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="skill.js"></script>
+</body>
+</html>

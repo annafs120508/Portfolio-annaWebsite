@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyek Saya</title>
+    <link rel="stylesheet" href="hp.css">
+</head>
+<body>
+    <div class="project-container">
+        <div class="header">Proyek Saya</div>
+
+        <div class="project-filters">
+            <button class="filter-button active" data-filter="all">Terbaru</button>
+            <button class="filter-button" data-filter="web">Desain Web</button>
+            <button class="filter-button" data-filter="app">Desain Aplikasi</button>
+        </div>
+
+        <div class="projects">
+            <div class="project-content all active">
+                <div class="project-card" data-project="web1" data-video="assets/prototype/proto1.mp4" data-title="Proyek Web 1" data-description="Deskripsi tentang Proyek Web 1...">
+                    <img src="assets/images/port-img1.jpg" alt="Desain Web 1">
+                    <div class="project-info">
+                        <h3>Proyek Web 1</h3>
+                        <span class="category">Desain Web</span>
+                    </div>
+                </div>
+                <div class="project-card" data-project="app1" data-video="assets/prototype/proto2.mp4" data-title="Proyek App 1" data-description="Deskripsi tentang Proyek App 1...">
+                    <img src="assets/images/port-img1.jpg" alt="Desain Aplikasi 1">
+                    <div class="project-info">
+                        <h3>Proyek App 1</h3>
+                        <span class="category">Desain Aplikasi</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Konten untuk Desain Web -->
+            <div class="project-content web">
+                <div class="project-card" data-project="web1" data-video="assets/prototype/proto1.mp4" data-title="Proyek Web 1" data-description="Deskripsi tentang Proyek Web 1...">
+                    <img src="assets/images/port-img1.jpg" alt="Desain Web 1">
+                    <div class="project-info">
+                        <h3>Proyek Web 1</h3>
+                        <span class="category">Desain Web</span>
+                    </div>
+                </div>
+                <div class="project-card" data-project="web2" data-video="assets/prototype/proto2.mp4" data-title="Proyek Web 2" data-description="Deskripsi tentang Proyek Web 2...">
+                    <img src="assets/images/port-img1.jpg" alt="Desain Web 2">
+                    <div class="project-info">
+                        <h3>Proyek Web 2</h3>
+                        <span class="category">Desain Web</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Konten untuk Desain Aplikasi -->
+            <div class="project-content app">
+                <div class="project-card" data-project="app1" data-video="assets/prototype/proto1.mp4" data-title="Proyek App 1" data-description="Deskripsi tentang Proyek App 1...">
+                    <img src="assets/images/pp.jpg" alt="Desain Aplikasi 1">
+                    <div class="project-info">
+                        <h3>Proyek App 1</h3>
+                        <span class="category">Desain Aplikasi</span>
+                    </div>
+                </div>
+                <div class="project-card" data-project="app2" data-video="assets/prototype/proto2.mp4" data-title="Proyek App 2" data-description="Deskripsi tentang Proyek App 2...">
+                    <img src="assets/images/port-img1.jpg" alt="Desain Aplikasi 2">
+                    <div class="project-info">
+                        <h3>Proyek App 2</h3>
+                        <span class="category">Desain Aplikasi</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal untuk menampilkan detail proyek -->
+    <div id="projectModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2 id="modalTitle">Judul Proyek</h2>
+            <div id="modalVideo">
+                <video autoplay loop muted playsinline>
+                    <source src="" type="video/mp4">
+                    Browser Anda tidak mendukung video tag.
+                </video>
+            </div>
+            <div id="modalDescription">
+                <h3>About Project</h3>
+                <p id="aboutProject">Deskripsi proyek...</p>
+                <h3>Problem</h3>
+                <p id="problem">Masalah yang dihadapi...</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="hp.js"></script>
+</body>
+</html>

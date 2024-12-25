@@ -1,0 +1,67 @@
+/* Modal Styles */
+.modal {
+    display: none; /* Disembunyikan secara default */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Background transparan hitam */
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    overflow: auto; /* Scroll jika konten terlalu besar */
+}
+
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 60%; /* Modal lebih kecil secara default */
+    max-width: 500px; /* Maksimal lebar modal */
+    max-height: 70vh; /* Batas tinggi modal */
+    text-align: center;
+    overflow-y: auto; /* Scroll secara vertikal jika diperlukan */
+}
+
+/* Video atau Konten di Modal */
+#modalVideo iframe,
+#modalVideo video {
+    width: 100%;
+    height: 250px; /* Ukuran lebih kecil secara default */
+    margin-bottom: 20px;
+}
+
+/* Tombol Close di Modal */
+.close-btn {
+    font-size: 30px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+/* Responsif untuk perangkat lebih kecil */
+@media screen and (max-width: 768px) {
+    .modal-content {
+        width: 80%; /* Modal lebih lebar pada perangkat kecil */
+        max-width: 400px; /* Maksimal lebar lebih kecil */
+    }
+
+    #modalVideo iframe,
+    #modalVideo video {
+        height: 200px; /* Video lebih kecil */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .modal-content {
+        width: 90%; /* Modal hampir memenuhi layar */
+        max-width: 300px; /* Maksimal lebar lebih kecil */
+    }
+
+    #modalVideo iframe,
+    #modalVideo video {
+        height: 150px; /* Video paling kecil */
+    }
+}
